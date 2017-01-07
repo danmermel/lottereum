@@ -1,0 +1,9 @@
+#!/usr/bin/expect
+set timeout 1000
+spawn /usr/bin/geth attach
+expect ">"
+send "loadScript('/home/daniel/lottereum/weekly_deploy.js')\r"
+expect "Lottereo updated"
+set results $expect_out(buffer)
+send "exit\r"
+expect eof
