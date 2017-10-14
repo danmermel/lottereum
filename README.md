@@ -99,3 +99,6 @@ draw.getWinnerByIndex(0);
 var draw2 = ...; // create new contract and wait until its mined
 draw.transferPot(draw2.address, {from:theminer, gas: 3000000});
 ```
+
+## Read my blog posts about it
+http://remebit.com/an-ethereum-project-1-the-idea/
